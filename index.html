@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Easling Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <a href="/">Jason E</a>
+        <nav>
+            <a target="_blank" href="https://github.com/JEasling"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/jason-easling-a612401b1/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>
+                    Hello! I'm Jason...</h1>
+                <p>Softeware Developer</p>
+            </div>
+            <h5 class="intro-description">
+                Diesel Mechanic by qualification, and a software developer by trade. Based in Georgia, I enjoy coding,
+                spending time with my family, playing video games, and to build and test all sorts of useful internet
+                applications and websites!
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a href="mailto:jasoneasling@gmail.com">
+                    Email me
+                </a>
+                <a target="_blank" href="https://github.com/JEasling">GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/jason-easling-a612401b1/">LinkedIn</a>
+            </div>
+
+            <div id="play-game">
+                <button onclick="playGame()">Play Game???</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Great... now its ruined!</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button style="display: none;" onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>ReactJS | React Native | NodeJS & ExpressJS
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Data analysis | Data visualization</td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>TailwindCSS | FantaCSS | Firebase | PostgreSQL | GIT | Docker | AWS |VScode
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Design</td>
+                        <td>Canvas | Pixlr | Microsoft Paint</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <p>Frebruary 17, 2023</p>
+                        <h4>Excersize_me</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>HTML</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>CSS</p>
+                            </div>
+                        </div>
+                        <p>Excersize_me is my Workout program that I created!</p>
+                        <div class="projects-links">
+                            <a target="_blank" href="https://exerciseem.netlify.app">Live</a>
+                            <a target="_blank" href="https://github.com/JEasling/Exercise_Me">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="Exercise_Me_screenshot.png" alt="jasoneasling-thumbnail" />
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>Freburary 17, 2024</p>
+                        <h4>JasonEasling</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>FantaCSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                        <p>JasonEasling is my portfolio website so that I was able to show my abilities and my projects!
+                        </p>
+                        <div class="projects-links">
+                            <a target="_blank" href="/">Live</a>
+                            <a target="_blank" href="/">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="My_Portfolio_Pic.png" alt="jasoneasling-thumbnail" />
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div>
+                        <p>Freburary 17, 2024</p>
+                        <h4>College Project</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>HTLM</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>CSS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                        <p>This was a college project for a website that I built with multiple webpages and
+                            incorporation of different things such as a local time display as well as an applicaton
+                            where you can get your latitude and longitude The Point of this was to show different things
+                            that were learned I chose to make mine video game reviews!</p>
+                        <div class="projects-links">
+                            <a target="_blank" href="https://github.com/JEasling/College-Project">Github</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="Pic_one_college.png" alt="jasoneasling-thumbnail" />
+                        <img class="big-img" src="Pic_two_college.png" alt="jasoneasling-thumbnail" />
+                        <img class="big-img" src="Pic_Three_college.png" alt="jasoneasling-thumbnail" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a href="">JasonEasling</a> </p>
+    </footer>
+    <script>
+
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetBtn = document.querySelector('.color-div button')
+        const playButton = document.getElementById('play-game')
+
+        //2. create functions
+
+        function playGame() {
+            colorDiv.style.display = 'block'
+            playButton.style.display = 'none'
+        }
+
+        function changeColor() {
+            const selectedColor = colorInput.value
+            body.style.background = selectedColor
+            resetBtn.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.direction = 'none'
+        }
+
+        function resetColor() {
+            body.style.background = 'white'
+            colorInput.style.display = 'block'
+            playButton.style.display = 'block'
+            hiddenText.style.display = 'none'
+            resetBtn.style.display = 'none'
+            colorDiv.style.display = 'none'
+        }
+
+        //3. assign the functions to the buttons by adding them 
+    </script>
+</body>
+
+</html>
